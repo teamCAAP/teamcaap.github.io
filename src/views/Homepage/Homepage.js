@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import './Homepage.css';
 import crossPlatformLogo from './cross-platform.svg';
-
+import { Container, Row, Col } from 'reactstrap';
 
 class Homepage extends Component {
   render() {
@@ -12,41 +12,43 @@ class Homepage extends Component {
         <Header />
 
         <div className="banner">
-          <div className="govuk-width-container">
-            <div class="govuk-grid-row">
-              <div className="govuk-grid-column-two-thirds">
-                <h1 className="govuk-heading-xl">
-                  Build it once then share it with everyone.
-                </h1>
-                <p className="govuk-body-l">
-                  Replicate good practice, reduce wasted cost.
-                </p>
-              </div>
-              <div className="govuk-grid-column-one-third">
+          <Container>
+            <Row>
+              <Col>
+                <Row>
+                  <Col>
+                    <h1>Build it once then share it with everyone.</h1>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <p>Replicate good practice, reduce wasted cost.</p>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
                 <img src={crossPlatformLogo} />
-              </div>
-            </div> 
-          </div>
+              </Col>
+            </Row>
+
+          </Container>
         </div>
 
-        <div class="govuk-width-container">
-          <main class="govuk-main-wrapper " id="main-content" role="main">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds">
-                <h1 className="govuk-heading-xl">
+        <Container className="mt-5">
+          <Row>
+            <Col>
+              <h1>
                   Welcome
-                </h1>                
-                <p className="govuk-body-l">
-                  Charity as a Platform is a new way of building digital services. We’re creating a set of shared components, service designs, platforms, data and hosting, that every charity service can use.
-                </p>
-                <p className="govuk-body-l">
-                  This saves time and money for charities to spend their efforts on providing charitable services.
-                </p>
-              </div>
-            </div>
-          </main>
-        </div>
-        
+              </h1>                
+              <p>
+                Charity as a Platform is a new way of building digital services. We’re creating a set of shared components, service designs, platforms, data and hosting, that every charity service can use.
+              </p>
+              <p>
+                This saves time and money for charities to spend their efforts on providing charitable services.
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </div>
       
     );

@@ -1,18 +1,6 @@
-.homepage .govuk-header {
-  border-bottom: none;
-}
-
-.homepage .govuk-header__container {
-  border: none;
-}
-
 .homepage .banner {
   background: #b10e1e;
   color: #fff;
-  height: 200px;
+  height: 300px;
   padding: 50px;
-}
-
-.homepage .banner .govuk-heading-xl, .homepage .banner .govuk-body-l {
-  color: #fff;
 }

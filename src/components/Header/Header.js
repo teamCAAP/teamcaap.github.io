@@ -1,24 +1,48 @@
 import React, { Component } from 'react';
 import './Header.css';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
-      <header className="govuk-header " role="banner" data-module="header">
-        <div className="govuk-header__container govuk-width-container">
-
-          <div className="govuk-header__logo">
-            <a href="#" className="govuk-header__link govuk-header__link--homepage">
-              <span className="govuk-header__logotype">
-                <span className="govuk-header__logotype-text">
-                  Charity as a platform
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </header>
+      <div>
+        <Navbar expand="md">
+          <Container>
+            <Row>
+              <Col>
+                <NavbarBrand href="/">Charity as a platform</NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
+              </Col>
+            </Row>
+          </Container>
+        </Navbar>
+      </div>
     );
   }
 }
