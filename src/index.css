@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.govuk-header {
+  background: #1f294a;
+}
+
+.govuk-header__container {
+  border-bottom: 10px solid #b10e1e;
+}
+
