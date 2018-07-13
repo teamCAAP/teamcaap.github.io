@@ -1,0 +1,8 @@
+.govuk-header {
+    background: #1f294a;
+    height: 60px;
+}
+
+.govuk-header__container {
+    border-bottom: 10px solid #b10e1e;
+}

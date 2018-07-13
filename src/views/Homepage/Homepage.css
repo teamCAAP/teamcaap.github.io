@@ -1,28 +1,18 @@
-.App {
-  text-align: center;
+.homepage .govuk-header {
+  border-bottom: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.homepage .govuk-header__container {
+  border: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.homepage .banner {
+  background: #b10e1e;
+  color: #fff;
+  height: 200px;
+  padding: 50px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.homepage .banner .govuk-heading-xl, .homepage .banner .govuk-body-l {
+  color: #fff;
 }
